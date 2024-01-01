@@ -1,7 +1,6 @@
-import Dashboard from "./components/dashboard";
 import { Routes,Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-
+import Dashboard from './components/dashboard/index'
 
 function View() {
   return (
