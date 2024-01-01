@@ -1,7 +1,11 @@
+import Layout from "./components/layout"
+import View from "./routes"
+import ProjectList from "./components/project/ProjectList"
+
 function App() {
   return (
     <>
-    <h1>Lemon Panl Pall</h1>
+      <Layout/>
     </>
   )
 }
