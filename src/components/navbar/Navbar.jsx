@@ -5,14 +5,15 @@ import SignedOutLinks from './SignedOutLinks'
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper grey darken-4">
+    <nav className="nav-wrapper grey darken-3">
       <div className="container">
-        <Link to='/' className="brand-logo">Max Plan</Link>
+        <Link to='/' className="brand-logo">MaxPlan</Link>
         <SignedInLinks />
-        <SignedOutLinks/>
+        <SignedOutLinks />
       </div>
     </nav>
   )
 }
 
 export default Navbar
+
