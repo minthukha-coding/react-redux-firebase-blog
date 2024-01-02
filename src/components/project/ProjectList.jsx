@@ -1,48 +1,14 @@
 import React from "react";
+import ProjectSummary from './ProjectSummary'
 
-const ProjectList = () => {
+const ProjectList = ({projets}) => {
     return(
         <div className="project-list section">
-
-            <div className="card z-depth-0 project-summary">
-                <div className="card-content grey-text text-darken-3">
-                    <span className="card-title ">
-                        Project Title
-                    </span>
-                    <p>Posted by the min thu kha</p>
-                    <p className="grey-text">1st January,6pm</p>
-                </div>
-            </div>
-
-            <div className="card z-depth-0 project-summary">
-                <div className="card-content grey-text text-darken-3">
-                    <span className="card-title ">
-                        Project Title
-                    </span>
-                    <p>Posted by the min thu kha</p>
-                    <p className="grey-text">1st January,6pm</p>
-                </div>
-            </div>
-
-            <div className="card z-depth-0 project-summary">
-                <div className="card-content grey-text text-darken-3">
-                    <span className="card-title ">
-                        Project Title
-                    </span>
-                    <p>Posted by the min thu kha</p>
-                    <p className="grey-text">1st January,6pm</p>
-                </div>
-            </div>
-
-            <div className="card z-depth-0 project-summary">
-                <div className="card-content grey-text text-darken-3">
-                    <span className="card-title ">
-                        Project Title
-                    </span>
-                    <p>Posted by the min thu kha</p>
-                    <p className="grey-text">1st January,6pm</p>
-                </div>
-            </div>
+            {projets && projets.map(projet => {
+                return(
+                    <ProjectSummary project={projet} key={projet.id}/>
+                )
+            })}
         </div>
     )
 }
